@@ -1,10 +1,12 @@
 Gl-inet AXT1800 固件
 
-固件自动拉取编译，如有bug劳烦报告下！
+固件经由Github Actions自动云编译，性能及稳定性请自行测试
 
-此固件未添加官方UI！
+此固件未添加官方界面
 
 ## 固件相关
+
+固件编译脚本fork自[Road-tech](https://github.com/Road-tech)的[Custom_firmware_for_gl-inet_AXT1800](https://github.com/Road-tech/Custom_firmware_for_gl-inet_AXT1800)
 
 编译配置文件参考了[JiaY-shi](https://github.com/JiaY-shi)的[build-gl.inet](https://github.com/JiaY-shi/build-gl.inet)，以及[monw](https://github.com/monw)的[gl-infra-builder](https://github.com/monw/gl-infra-builder)
 
@@ -14,17 +16,17 @@ Gl-inet AXT1800 固件
 
 ## Openwrt配置相关
 
-- 默认管理页面: 192.168.8.1
+- 默认管理页面: 192.168.1.20
 
 - 默认密码: password
 
-- 默认SSID：GL-AXT1800 / GL-AXT1800-5G
+- 默认SSID：Slate-AXT1800 / Slate-AXT1800-5G
 
 - LTE/4G 接口自动设置
 
 - 默认使用argon主题
 
-- 集成Passwall、Openclash、adguardhome、advanced（高级设置）、aliddns、aria2、ddns、frpc、frps、tinyproxy、ttyd、uhttpd、watchcat、wireguard、wol等常用工具
+- 集成openclash、passwall2、ddns、qbittorrent、ttyd、uhttpd、wireguard、wol等常用工具
 
 ## 关于自动编译脚本
 
