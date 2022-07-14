@@ -12,7 +12,7 @@ GL-iNet Slate-AXT1800 Openwrt固件
 
 此固件基于[gl-inet](https://github.com/gl-inet)的官方开源仓库[gl-infra-builder](https://github.com/gl-inet/gl-infra-builder)，属openwrt 21.02，5.4内核。
 
-如果需要定制，可以自行fork修改，都有详细备注。
+如需定制，请自行fork及修改。
 
 ## Openwrt配置相关
 
@@ -20,7 +20,7 @@ GL-iNet Slate-AXT1800 Openwrt固件
 
 - 默认密码: password
 
-- 默认SSID：Slate-AXT1800 / Slate-AXT1800-5G
+- 默认WiFi SSID：Slate-AXT1800 / Slate-AXT1800-5G
 
 - LTE/4G 接口自动设置
 
