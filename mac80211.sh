@@ -191,7 +191,7 @@ detect_mac80211() {
 			set wireless.default_radio${devidx}.device=radio${devidx}
 			set wireless.default_radio${devidx}.network=lan
 			set wireless.default_radio${devidx}.mode=ap
-			set wireless.default_radio${devidx}.ssid=GL-AXT1800${wifiname}
+			set wireless.default_radio${devidx}.ssid=Slate-AXT1800${wifiname}
 			set wireless.default_radio${devidx}.encryption=none
 			set wireless.radio1.country=US
 			set wireless.radio1.channel=auto
