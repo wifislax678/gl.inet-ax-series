@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build axt1800
+name: Slate-AXT1800
 
 on:
   repository_dispatch:
@@ -17,16 +17,16 @@ on:
 env:
   REPO_URL: https://github.com/gl-inet/gl-infra-builder.git
   REPO_BRANCH: main
-  CONFIG_FILE: Road-axt1800.yml
+  CONFIG_FILE: Slate-AXT1800.yml
   WIFI_CONFIG_FILE: mac80211.sh
-  GIT_USER: Road-tech
-  GIT_EMAIL: 496814664@qq.com
+  GIT_USER: eggydutch
+  GIT_EMAIL: rolandtang823@gmail.com
   DIY_P1_SH: add-feeds.sh
   DIY_P2_SH: load-config.sh
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
-  UPLOAD_COWTRANSFER: true
-  UPLOAD_WETRANSFER: true
+  UPLOAD_COWTRANSFER: false
+  UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
@@ -166,14 +166,14 @@ jobs:
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
       with:
-        retain_days: 1
+        retain_days: 3
         keep_minimum_runs: 3
 
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@v0.1.0
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
-        keep_latest: 3
+        keep_latest: 7
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
