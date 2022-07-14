@@ -6,10 +6,8 @@ feeds:
     path: ../feeds_dir/NueXini
 
 packages:
-  - luci-app-adguardhome
-  - adguardhome
+  - luci-app-accesscontrol
   - dnsmasq-full
-  - luci-app-commands
   - kmod-usb-net-rndis
   - usb-modeswitch
   - luci-theme-argon-2102
@@ -18,58 +16,40 @@ packages:
   - ddns-scripts_aliyun
   - luci-app-commands
   - luci-app-mwan3
-  - luci-app-eqos
   - wireguard-tools
   - kmod-usb3
-  - luci-app-passwall
-  - luci-app-advanced
-  - luci-app-aliddns
-  - luci-app-aria2
-  - luci-app-ddns
-  - luci-app-frpc
-  - luci-app-frps
-  - luci-app-tinyproxy
+  - luci-app-passwall2
+  - luci-app-autoreboot
   - luci-app-ttyd
   - luci-app-uhttpd
-  - luci-app-watchcat
   - luci-app-wireguard
   - luci-app-wol
-  - luci-app-aliyundrive-fuse
   - luci-app-argon-config
   - luci-app-cifs-mount
   - luci-app-cifsd
-  - luci-app-ddnsto
-  - luci-app-mwan3helper
-  - luci-app-netspeedtest
-  - luci-app-softether
+  - luci-app-cpufreq
+  - luci-app-ramfree
   - luci-app-sqm
-  - luci-app-unblockmusic
   - luci-app-usb-printer
-  - luci-app-uugamebooster
-  - luci-app-verysync
+  - luci-app-vsftp
   - luci-app-vlmcsd
   - luci-app-wrtbwmon
-  - luci-app-zerotier
-
+  - luci-app-upnp
+  - luci-app-wifischedule
+  - luci-app-qbittorrent
+  - luci-app-diskman
+  - luci-app-turboacc
+  - luci-app-hd-idle
 
 diffconfig: |
   CONFIG_PACKAGE_dnsmasq=n
   CONFIG_PACKAGE_ttyd=y
-  CONFIG_PACKAGE_luci-i18n-adguardhome-zh-cn=y
-  CONFIG_PACKAGE_luci-i18n-aliyundrive-fuse-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
-  CONFIG_PACKAGE_luci-i18n-aria2-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
-  CONFIG_PACKAGE_luci-i18n-ddnsto-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-firewall-zh-cn=y
-  CONFIG_PACKAGE_luci-i18n-frpc-zh-cn=y
-  CONFIG_PACKAGE_luci-i18n-frps-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-mwan3-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-opkg-zh-cn=y
-  CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-sqm-zh-cn=y
-  CONFIG_PACKAGE_luci-i18n-tinyproxy-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
-  CONFIG_PACKAGE_luci-i18n-watchcat-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-wol-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-wrtbwmon-zh-cn=y
