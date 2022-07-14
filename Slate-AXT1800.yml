@@ -9,22 +9,17 @@ packages:
   - dnsmasq-full
   - kmod-usb-net-rndis
   - usb-modeswitch
-  - wireguard-tools
   - kmod-usb3
   - luci-app-accesscontrol
   - luci-theme-argon-2102
   - luci-app-openclash
   - luci-app-ddns
   - ddns-scripts_aliyun
-  - luci-app-mwan3
   - luci-app-passwall2
   - luci-app-autoreboot
   - luci-app-ttyd
-  - luci-app-uhttpd
-  - luci-app-wireguard
   - luci-app-wol
   - luci-app-argon-config
-  - luci-app-cifsd
   - luci-app-cpufreq
   - luci-app-ramfree
   - luci-app-qos
@@ -43,10 +38,15 @@ diffconfig: |
   CONFIG_PACKAGE_dnsmasq=n
   CONFIG_PACKAGE_ttyd=y
   CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
+  CONFIG_PACKAGE_luci-i18n-accesscontrol-zh-cn=y
+  CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
+  CONFIG_PACKAGE_luci-i18n-cpufreq-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-firewall-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-mwan3-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-opkg-zh-cn=y
+  CONFIG_PACKAGE_luci-i18n-qbittorrent-zh-cn=y 
   CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
+  CONFIG_PACKAGE_luci-i18n-usb-printer-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-wol-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-wrtbwmon-zh-cn=y
