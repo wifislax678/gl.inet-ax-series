@@ -40,7 +40,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
 
-    - name: Initialization environment/配置编译环境
+    - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
@@ -56,25 +56,25 @@ jobs:
         git config --global user.name $GIT_USER
         git config --global user.email $GIT_EMAIL
 
-    - name: Clone gl-infra-builder source code/克隆gl-infra-builder源码
+    - name: Clone gl-infra-builder source code
       working-directory: /workdir
       run: |
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH gl-infra-builder
         ln -sf /workdir/gl-infra-builder $GITHUB_WORKSPACE/gl-infra-builder
 
-    - name: Load custom feeds and profiles/添加第三方源与个人配置文件
+    - name: Load custom feeds and profiles
       run: |
         chmod +x $DIY_P1_SH
         $GITHUB_WORKSPACE/$DIY_P1_SH
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE gl-infra-builder/profiles/Road.yml
 
-    - name: Download openwrt source code/拉取openwrt源码
+    - name: Download openwrt source code
       run: |
         cd gl-infra-builder
         python3 setup.py -c config-wlan-ap-5.4.yml
 
-    - name: Download feeds and Generate config file/拉取订阅文件并生成config文件
+    - name: Download feeds and Generate config file
       id: package
       run: |
         rm $GITHUB_WORKSPACE/gl-infra-builder/wlan-ap/feeds/wifi-ax/mac80211/files/lib/wifi/mac80211.sh
@@ -84,12 +84,12 @@ jobs:
         ./scripts/gen_config.py target_wlan_ap-gl-axt1800-5-4 luci Road
         $GITHUB_WORKSPACE/$DIY_P2_SH
         
-    - name: 添加glinet私有软件包（官方UI）
+    - name: Add gl.inet official UI
       run: |
         cd gl-infra-builder
         git clone https://github.com/gl-inet/glinet4.x.git glinetUI
 
-    - name: Compile the firmware/编译
+    - name: Compile the firmware
       id: compile
       run: |
         cd gl-infra-builder/wlan-ap/openwrt
@@ -149,8 +149,9 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M")"
+        echo "::set-output name=release_tag::Slate-AXT1800-$(date +"%Y.%m.%d-%H.%M")"
         touch release.txt
+        echo "Slate AX(GL-AXT1800) Firmware" >> release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
         echo "::set-output name=status::success"
