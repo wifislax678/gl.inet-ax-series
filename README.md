@@ -1,4 +1,4 @@
-Gl-inet AXT1800 固件
+GL-iNet Slate-AXT1800 Openwrt固件
 
 固件经由Github Actions自动云编译，性能及稳定性请自行测试
 
@@ -6,7 +6,7 @@ Gl-inet AXT1800 固件
 
 ## 固件相关
 
-固件编译脚本fork自[Road-tech](https://github.com/Road-tech)的[Custom_firmware_for_gl-inet_AXT1800](https://github.com/Road-tech/Custom_firmware_for_gl-inet_AXT1800)
+固件编译脚本fork并根据[Road-tech](https://github.com/Road-tech)的[Custom_firmware_for_gl-inet_AXT1800](https://github.com/Road-tech/Custom_firmware_for_gl-inet_AXT1800)作出定制
 
 编译配置文件参考了[JiaY-shi](https://github.com/JiaY-shi)的[build-gl.inet](https://github.com/JiaY-shi/build-gl.inet)，以及[monw](https://github.com/monw)的[gl-infra-builder](https://github.com/monw/gl-infra-builder)
 
