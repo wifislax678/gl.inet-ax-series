@@ -1,4 +1,4 @@
-GL-iNet Slate-AXT1800 Openwrt固件
+## GL.iNet Slate-AXT1800 Openwrt固件
 
 固件经由Github Actions自动云编译，性能及稳定性请自行测试
 
