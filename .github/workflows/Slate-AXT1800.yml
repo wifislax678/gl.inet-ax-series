@@ -20,7 +20,7 @@ env:
   CONFIG_FILE: Slate-AXT1800.yml
   WIFI_CONFIG_FILE: mac80211.sh
   GIT_USER: eggydutch
-  GIT_EMAIL: rolandtang823@gmail.com
+  GIT_EMAIL: idgas@fyx.com
   DIY_P1_SH: add-feeds.sh
   DIY_P2_SH: load-config.sh
   UPLOAD_BIN_DIR: true
