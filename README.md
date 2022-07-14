@@ -27,26 +27,26 @@
 - 默认使用argon主题
 
 - 集成插件：
-luci-app-accesscontrol	上网时间控制
-luci-app-openclash	    Clash代理客户端
-luci-app-ddns	          动态域名DNS
-luci-app-passwall2	    科学上网
-luci-app-autoreboot	    定时自动重启
-luci-app-ttyd	          网页终端命令行
-luci-app-wol	          网络唤醒
-luci-app-argon-config	  Argon主题设置
-luci-app-cpufreq	      CPU频率调制
-luci-app-ramfree	      内存释放
-luci-app-qos	          网络流量服务质量(QoS)流控
-luci-app-usb-printer	  USB网络打印
-luci-app-vsftp	        FTP服务器
-luci-app-vlmcsd	        KMS激活服务器
-luci-app-wrtbwmon	      实时流量监控
-luci-app-upnp	          通用即插即用UPnP（端口自动转发）
-luci-app-wifischedule	  WiFi计划
-luci-app-qbittorrent	  BT下载工具
-luci-app-diskman	      磁盘管理
-luci-app-hd-idle	      硬盘休眠
+  - luci-app-accesscontrol	上网时间控制
+  - luci-app-openclash	    Clash代理客户端
+  - luci-app-ddns	          动态域名DNS
+  - luci-app-passwall2	    科学上网
+  - luci-app-autoreboot	    定时自动重启
+  - luci-app-ttyd	          网页终端命令行
+  - luci-app-wol	          网络唤醒
+  - luci-app-argon-config	  Argon主题设置
+  - luci-app-cpufreq	      CPU频率调制
+  - luci-app-ramfree	      内存释放
+  - luci-app-qos	          网络流量服务质量(QoS)流控
+  - luci-app-usb-printer	  USB网络打印
+  - luci-app-vsftp	        FTP服务器
+  - luci-app-vlmcsd	        KMS激活服务器
+  - luci-app-wrtbwmon	      实时流量监控
+  - luci-app-upnp	          通用即插即用UPnP（端口自动转发）
+  - luci-app-wifischedule	  WiFi计划
+  - luci-app-qbittorrent	  BT下载工具
+  - luci-app-diskman	      磁盘管理
+  - luci-app-hd-idle	      硬盘休眠
 
 ## 关于自动编译脚本
 
