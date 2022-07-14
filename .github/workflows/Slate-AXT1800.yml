@@ -13,6 +13,8 @@ name: Slate-AXT1800
 on:
   repository_dispatch:
   workflow_dispatch:
+  schedule:
+    - cron: 0 16 * * *
 
 env:
   REPO_URL: https://github.com/gl-inet/gl-infra-builder.git
