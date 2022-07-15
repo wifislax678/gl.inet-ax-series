@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Slate-AXT1800-4.x
+name: Slate-AXT1800-4.4
 
 on:
   repository_dispatch:
@@ -19,7 +19,7 @@ on:
 env:
   REPO_URL: https://github.com/gl-inet/gl-infra-builder.git
   REPO_BRANCH: main
-  CONFIG_FILE: Slate-AXT1800.yml
+  CONFIG_FILE: AX-Series.yml
   WIFI_CONFIG_FILE: mac80211.sh
   GIT_USER: eggydutch
   GIT_EMAIL: idgas@fyx.com
@@ -141,9 +141,9 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "::set-output name=release_tag::Slate-AXT1800-4.x-$(date +"%Y.%m.%d-%H.%M")"
+        echo "::set-output name=release_tag::Slate-AXT1800-4.4-$(date +"%Y.%m.%d-%H.%M")"
         touch release.txt
-        echo "Slate AX(GL-AXT1800)-4.x Firmware" >> release.txt
+        echo "Slate AX(GL-AXT1800)-4.4 Firmware" >> release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
         echo "::set-output name=status::success"
