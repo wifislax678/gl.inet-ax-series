@@ -25,13 +25,13 @@ packages:
   - luci-app-qos
   - luci-app-usb-printer
   - luci-app-vsftp
+  - vsftpd-alt
   - luci-app-vlmcsd
   - luci-app-wrtbwmon
   - luci-app-upnp
   - luci-app-wifischedule
   - luci-app-qbittorrent
   - luci-app-diskman
-  - luci-app-turboacc
   - luci-app-hd-idle
 
 diffconfig: |
@@ -45,8 +45,10 @@ diffconfig: |
   CONFIG_PACKAGE_luci-i18n-firewall-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-mwan3-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-opkg-zh-cn=y
+  CONFIG_PACKAGE_luci-i18n-ramfree-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-qbittorrent-zh-cn=y 
   CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-usb-printer-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-wol-zh-cn=y
   CONFIG_PACKAGE_luci-i18n-wrtbwmon-zh-cn=y
+  CONFIG_PACKAGE_luci-i18n-vsftpd-zh-cn=y
