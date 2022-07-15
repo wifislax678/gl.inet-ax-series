@@ -2,7 +2,7 @@
 
 固件经由Github Actions自动云编译，性能及稳定性请自行测试
 
-***此固件无官方界面***
+***此固件无官方界面
 
 ## 固件相关
 
@@ -44,7 +44,7 @@
   - luci-app-upnp	          通用即插即用UPnP（端口自动转发）
   - luci-app-wifischedule	  WiFi计划
   - luci-app-qbittorrent	  BT下载工具
-  - luci-app-wrtbwmon	      FTP服务器
+  - luci-app-vsftp	        FTP服务器
   - luci-app-diskman	      磁盘管理
   - luci-app-hd-idle	      硬盘休眠
 
