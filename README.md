@@ -1,4 +1,4 @@
-## GL.iNet Slate-AXT1800 Openwrt固件
+## GL.iNet Slate-AXT1800/Flint-AX1800 Openwrt固件
 
 固件经由Github Actions自动云编译，性能及稳定性请自行测试
 
@@ -20,7 +20,7 @@
 
 - 预设密码: 无
 
-- 预设WiFi SSID：Slate-AXT1800 / Slate-AXT1800-5G
+- 预设WiFi SSID：GL.iNet-AX / GL.iNet-AX-5G
 
 - LTE/4G 接口自动设置
 
