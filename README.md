@@ -12,6 +12,8 @@
 
 此固件基于[gl-inet](https://github.com/gl-inet)的官方开源仓库[gl-infra-builder](https://github.com/gl-inet/gl-infra-builder)，属Openwrt 21.02，提供5.4及4.4内核两个版本
 
+支持Slate-AXT1800及Flint-AX1800两个型号
+
 如需定制，请自行fork及修改
 
 ## Openwrt设定
