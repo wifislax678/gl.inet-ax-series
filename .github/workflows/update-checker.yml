@@ -15,10 +15,10 @@ env:
   REPO_URL: https://github.com/gl-inet/gl-infra-builder.git
   REPO_BRANCH: main
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: 0 5 * ? *
+#on:
+#  workflow_dispatch:
+#  schedule:
+#    - cron: 0 5 * ? *
 
 jobs:
   check:
