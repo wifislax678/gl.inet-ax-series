@@ -9,13 +9,13 @@
 # Description: Source code update checker
 #
 
-name: Update Checker
+# name: Update Checker
 
-env:
-  REPO_URL: https://github.com/gl-inet/gl-infra-builder.git
-  REPO_BRANCH: main
+# env:
+#  REPO_URL: https://github.com/gl-inet/gl-infra-builder.git
+#  REPO_BRANCH: main
 
-#on:
+# on:
 #  workflow_dispatch:
 #  schedule:
 #    - cron: 0 5 * ? *
